@@ -3,51 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="commonstyles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
   <script defer src="./humantoepoch.js"></script>
   <title>Human Date to Epoch Date</title>
 </head>
 <body>
-  <header>
-    <h1>Time Converter</h1>
-  </header>
+  <div class="non-footer">
+    <header class="navbar">
+      <div style="font-size: 30px;"><a style="color:rgb(77, 80, 83);text-decoration: none;" href="https://my-utility-tools.netlify.app/" target="_blank">Utility<span style="background-color: rgb(39, 110, 241);color:white;border-radius: 50%;">@</span>pps</a></div>
+        <div class="dropdown-nav">Time Converter <span><img class="dropdown-arrow" src="Images/down-arrow.svg"></span>
+        <div class="dropdown-content">
+          <a href="epochtohuman.html">Epoch to Human</a>
+          <a href="#">Human to Epoch</a>
+        </div>
+        </div>
 
-  <nav>
-    <p>Check out other time converters here:</p>
-    <a href= "#">Human to epoch time Converter</a>
-    <br><br>
-    <a href= "./epochtohuman.html">Epoch to human time Converter</a>            
-  </nav>
+        <div class="other-websites">
+          <a href="https://my-encoder-decoder.netlify.app/base64encode" target="_blank">Encoder/Decoder</a>
+        </div> 
+        <div class="other-websites">
+          <a href="https://my-color-converter.netlify.app/rgb-hex" target="_blank">Color Converter</a>
+        </div>
+        <div class="other-websites">
+          <a href="https://my-number-base-converter.netlify.app/decimaltobinary" target="_blank">Number Base Converter</a>
+        </div>
+        <div class="other-websites">
+          <a href="https://my-string-utilities.netlify.app/stringutilities" target="_blank">String Utilities</a>
+        </div>
+        <div class="other-websites">
+          <a href="#" >Unit Converters</a>
+        </div >        
+    </header>
+  <main class="main-content" style="text-align: center;">
 
-  <main>
+    <div class="time-box">
+      <code>
+    <div style="margin-bottom: 30px;">
+      <label for="current-epoch">Current Epoch Time: </label>
+      <span id="current-epoch"></span> seconds
+    </div>
+
+    <div>
+      <label for="local-time">Current Time: </label>
+      <span id="local-time"></span>
+    </div>
+   
+  </code>
+  </div>
+
+    
     <h2>Human time to Epoch Converter</h2>
     <label for="year-input">Year: </label>
-    <input type="text" id="year-input" placeholder="Enter the year."></input>
+    <input type="text" id="year-input" placeholder="2021" ></input>
     <br><br>
     <label for="month-input">Month: </label>
-    <input type="text" id="month-input" placeholder="Enter the month."></input>
+    <input type="text" id="month-input" placeholder="01"></input>
     <br><br>
     <label for="date-input">Date: </label>
-    <input type="text" id="date-input" placeholder="Enter the date."></input>
+    <input type="text" id="date-input" placeholder="19"></input>
     <br><br>
     <label for="hour-input">Hour: </label>
-    <input type="text" id="hour-input" placeholder="Enter the hour."></input>
+    <input type="text" id="hour-input" placeholder="13"></input>
     <br><br>
     <label for="minute-input">Minute: </label>
-    <input type="text" id="minute-input" placeholder="Enter the minute."></input>
+    <input type="text" id="minute-input" placeholder="01"></input>
     <br><br>
     <label for="second-input">Second: </label>
-    <input type="text" id="second-input" placeholder="Enter the second."></input>
+    <input type="text" id="second-input" placeholder="56"></input>
     <br><br>  
     <input type="button" id="convert-button" value= "Convert">
+    <input type="button" id="reset-button" value= "Reset">
     <br><br>
     <label for="epoch-output">The Epoch value is: </label>
     <input type="text" id="epoch-output" placeholder="The result will appear here."></input>
   </main>
-  <hr>
+  <!--<section>
+    <div class="content-info" style="text-align: justify;">
+    <h3 style="padding-top: 10px;text-align: center;">What is Base64 decoding?</h3>
+    <p>When you have some binary data that you want to ship across a network, you generally don't do it by just streaming the bits and bytes over the wire in a raw format. 
+      Because some media are made for streaming text. You never know, some protocols may interpret your binary data as control characters (like a modem), or your binary data 
+      could be screwed up because the underlying protocol might think that you've entered a special character combination (like how FTP translates line endings).
+      So to get around this, people encode the binary data into characters and decode it back again.</p>
+     <p>Base64 is one of these types of encoding and decoding technique.
+     It is 64 because you can generally rely on the same 64 characters being present in many character sets, 
+     and you can be reasonably confident that your data's going to end up on the other side of the wire uncorrupted.</p>
+     <p>It's basically a way of decoding ASCII text to arbitrary binary data. It takes 4 characters per 3 bytes of data, plus potentially a bit of padding at the end.
+     Essentially each 6 bits of the input is encoded in a 64-character alphabet. The "standard" alphabet uses A-Z, a-z, 0-9 and + and /, with = as a padding character.
+     There are URL-safe variants.</p>
+     <p>You can check out more about it 
+       <a style="color:#388bfd;" href ="https://developer.mozilla.org/en-US/docs/Glossary/Base64" target="_blank">here.</a></p>
+      </div> 
+    </section>
+  -->
+</div>
 
-  <footer>
-    Contact me
+<div class="footer-wrapper">
+  <footer style="background-color:#24292e;">
+    <div class="footer-info" style="text-align: center;color:white;">
+      <p style="padding-top: 10px;">Check out my profiles here:</p>
+       <div class="footer-logo" >
+         <a href="https://www.linkedin.com/in/subham-mitra/" target="_blank"><img src="Images/linkedin.svg"></a>
+         <a style="margin-left: 10px;margin-right: 10px;" href="https://github.com/subham2107" target="_blank"><img src="Images/github.svg"></a>
+         <a href="https://twitter.com/subham2107" target="_blank"><img src="Images/twitter.svg"></a>
+        </div>
+    </div>
   </footer>
+  </div>
 
   
 </body>

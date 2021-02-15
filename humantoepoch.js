@@ -6,6 +6,29 @@ const minute=document.querySelector('#minute-input');
 const second=document.querySelector('#second-input');
 const button=document.querySelector('#convert-button');
 const output=document.querySelector('#epoch-output');
+const resetButton=document.querySelector('#reset-button');
+const currentEpoch=document.querySelector('#current-epoch');
+const localTime=document.querySelector('#local-time');
+
+
+setInterval(()=>{
+  currentEpoch.innerHTML = Math.floor(new Date().getTime()/1000);
+  //currentEpoch.innerHTML = Math.floor(Date.now()/1000);   //this works too..
+},1000);
+
+setInterval(()=>{
+  localTime.innerHTML = new Date();
+},1000);
+
+resetButton.addEventListener('click',()=>{
+  output.value = "";
+  year.value = "";
+  month.value = "";
+  date.value = "";
+  hour.value = "";
+  minute.value = "";
+  second.value = "";
+});
 
 function addZero(x)
 {
