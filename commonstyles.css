@@ -164,3 +164,7 @@ body{
   align-items: center;
   background-color: rgb(1, 16, 39);
 }
+
+.main-content{
+  text-align: center;
+}

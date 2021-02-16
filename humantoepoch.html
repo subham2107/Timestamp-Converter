@@ -55,48 +55,62 @@
 
     
     <h2>Human time to Epoch Converter</h2>
+    <div style="margin-bottom:20px;">
     <label for="year-input">Year: </label>
-    <input type="text" id="year-input" placeholder="2021" ></input>
-    <br><br>
+    <input style="margin-left:20px;" type="text" id="year-input" placeholder="2021" ></input>
+  </div>
+  <div style="margin-bottom:20px;">
     <label for="month-input">Month: </label>
-    <input type="text" id="month-input" placeholder="01"></input>
-    <br><br>
+    <input style="margin-left:5px;" type="text" id="month-input" placeholder="01"></input>
+  </div>
+  <div style="margin-bottom:20px;">
     <label for="date-input">Date: </label>
-    <input type="text" id="date-input" placeholder="19"></input>
-    <br><br>
+    <input style="margin-left:20px;" type="text" id="date-input" placeholder="19"></input>
+  </div>
+  <div style="margin-bottom:20px;">
     <label for="hour-input">Hour: </label>
-    <input type="text" id="hour-input" placeholder="13"></input>
-    <br><br>
+    <input style="margin-left:20px;" type="text" id="hour-input" placeholder="13"></input>
+  </div>
+  <div style="margin-bottom:20px;">
     <label for="minute-input">Minute: </label>
-    <input type="text" id="minute-input" placeholder="01"></input>
-    <br><br>
+    <input style="margin-left:5px;" type="text" id="minute-input" placeholder="01"></input>
+  </div>
+  <div style="margin-bottom:20px;">
     <label for="second-input">Second: </label>
-    <input type="text" id="second-input" placeholder="56"></input>
-    <br><br>  
+    <input style="margin-left:2px;" type="text" id="second-input" placeholder="56"></input>
+  </div>
+  <div style="margin-bottom:20px;">
     <input type="button" id="convert-button" value= "Convert">
     <input type="button" id="reset-button" value= "Reset">
-    <br><br>
+  </div>
+  <div style="margin-bottom:20px;">
     <label for="epoch-output">The Epoch value is: </label>
-    <input type="text" id="epoch-output" placeholder="The result will appear here."></input>
+    <input style="margin-left:5px;" type="text" id="epoch-output" placeholder="The result will appear here."></input>
+  </div>
   </main>
-  <!--<section>
+  <section>
     <div class="content-info" style="text-align: justify;">
-    <h3 style="padding-top: 10px;text-align: center;">What is Base64 decoding?</h3>
-    <p>When you have some binary data that you want to ship across a network, you generally don't do it by just streaming the bits and bytes over the wire in a raw format. 
-      Because some media are made for streaming text. You never know, some protocols may interpret your binary data as control characters (like a modem), or your binary data 
-      could be screwed up because the underlying protocol might think that you've entered a special character combination (like how FTP translates line endings).
-      So to get around this, people encode the binary data into characters and decode it back again.</p>
-     <p>Base64 is one of these types of encoding and decoding technique.
-     It is 64 because you can generally rely on the same 64 characters being present in many character sets, 
-     and you can be reasonably confident that your data's going to end up on the other side of the wire uncorrupted.</p>
-     <p>It's basically a way of decoding ASCII text to arbitrary binary data. It takes 4 characters per 3 bytes of data, plus potentially a bit of padding at the end.
-     Essentially each 6 bits of the input is encoded in a 64-character alphabet. The "standard" alphabet uses A-Z, a-z, 0-9 and + and /, with = as a padding character.
-     There are URL-safe variants.</p>
+    <h3 style="padding-top: 10px;text-align: center;">What is epoch time?</h3>
+    <p>The Unix epoch (or Unix time or POSIX time or Unix timestamp) is the number of seconds that have elapsed since January 1, 1970 
+      (midnight UTC/GMT), not counting leap seconds 
+      (in ISO 8601: 1970-01-01T00:00:00Z). Literally speaking the 
+      epoch is Unix time 0 (midnight 1/1/1970), but 'epoch' is often 
+      used as a synonym for Unix time. Some systems store epoch dates 
+      as a signed 32-bit integer, which might cause problems on 
+      January 19, 2038 (known as the Year 2038 problem or Y2038). 
+      The converter on this page converts readable dates to timestamps in 
+      milliseconds (13-digit).</p>
+      <p>Unix time is widely used in operating systems and file formats. 
+        In Unix-like operating systems, date is a command which will print or 
+        set the current time; by default, it prints or sets the time in the 
+        system time zone, but with the -u flag, it prints or sets the time in UTC
+         and, with the TZ environment variable set to refer to a 
+         particular time zone, prints or sets the time in that time zone.</p>
      <p>You can check out more about it 
-       <a style="color:#388bfd;" href ="https://developer.mozilla.org/en-US/docs/Glossary/Base64" target="_blank">here.</a></p>
+       <a style="color:#388bfd;" href ="https://en.wikipedia.org/wiki/Unix_time" target="_blank">here.</a></p>
       </div> 
     </section>
-  -->
+  
 </div>
 
 <div class="footer-wrapper">
