@@ -33,13 +33,14 @@
           <a href="https://my-string-utilities.netlify.app/stringutilities" target="_blank">String Utilities</a>
         </div>
         <div class="other-websites">
-          <a href="#" >Unit Converters</a>
+          <a href="https://my-unit-converter.netlify.app/temperature.html" target="_blank" >Unit Converters</a>
         </div >        
     </header>
-  <main class="main-content" >
-    <div class="time-box">
+  <main >
+    <h2 style="text-align: center;">Digital Time</h2>
+   <div class="time-box" >
       <code>
-    <div style="margin-bottom: 30px;">
+    <div style="margin-bottom: 10px;">
       <label for="current-epoch">Current Epoch Time: </label>
       <span id="current-epoch"></span> seconds
     </div>
@@ -51,40 +52,42 @@
    
   </code>
   </div>
-    
-    <h2>Epoch to Human time Converter</h2>
+
+    <h2 style="text-align: center;">Epoch to Human time Converter</h2>
+    <div class="input-output">
     <div style="margin-bottom:20px;">
       <label for="epoch-input">Epoch: </label>
     <input style="margin-left:10px;" type="text" id="epoch-input" placeholder="1611041456000"></input> 
   </div>
     <div style="margin-bottom:20px;">
       <input type="button" id="convert-button" value= "Convert">
-    <input type="button" id="reset-button" value= "Reset">
+      <input type="button" id="reset-button" value= "Reset">
   </div>
   <div style="margin-bottom:20px;">
     <label for="year-output">Year:</label>
-    <input style="margin-left:20px;" type="text" id="year-output" placeholder="year output."></input>
+    <input style="margin-left:20px;" type="text" id="year-output" placeholder="yyyy" readonly></input>
   </div>
   <div style="margin-bottom:20px;">
     <label for="month-output">Month:</label>
-    <input style="margin-left:5px;" type="text" id="month-output" placeholder="month output." ></input>
+    <input style="margin-left:5px;" type="text" id="month-output" placeholder="mm" readonly ></input>
   </div>
   <div style="margin-bottom:20px;">
     <label for="date-output">Date: </label>
-    <input style="margin-left:20px;" type="text" id="date-output" placeholder="date output." ></input>
+    <input style="margin-left:20px;" type="text" id="date-output" placeholder="dd" readonly ></input>
   </div>
   <div style="margin-bottom:20px;">
     <label for="hour-output">Hour: </label>
-    <input style="margin-left:20px;" type="text" id="hour-output" placeholder="hour output." ></input>
+    <input style="margin-left:20px;" type="text" id="hour-output" placeholder="hh" readonly></input>
   </div>
   <div style="margin-bottom:20px;">
     <label for="minute-output">Minute: </label>
-    <input style="margin-left:5px;"type="text" id="minute-output" placeholder="minute output." ></input>
+    <input style="margin-left:5px;"type="text" id="minute-output" placeholder="mm" readonly></input>
   </div>
-  <div style="margin-bottom:20px;">
+  <div>
     <label for="second-output">Second: </label>
-    <input style="margin-left:2px;" type="text" id="second-output" placeholder="second output." ></input>
+    <input style="margin-left:2px;" type="text" id="second-output" placeholder="ss" readonly></input>
   </div>
+</div>
 
   </main>
   <section>

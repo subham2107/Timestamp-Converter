@@ -33,14 +33,14 @@
           <a href="https://my-string-utilities.netlify.app/stringutilities" target="_blank">String Utilities</a>
         </div>
         <div class="other-websites">
-          <a href="#" >Unit Converters</a>
+          <a href="https://my-unit-converter.netlify.app/temperature.html" target="_blank" >Unit Converters</a>
         </div >        
     </header>
-  <main class="main-content" style="text-align: center;">
-
-    <div class="time-box">
+  <main>
+    <h2 style="text-align: center;">Digital Time</h2>
+    <div class="time-box" >
       <code>
-    <div style="margin-bottom: 30px;">
+    <div style="margin-bottom: 10px;">
       <label for="current-epoch">Current Epoch Time: </label>
       <span id="current-epoch"></span> seconds
     </div>
@@ -54,7 +54,8 @@
   </div>
 
     
-    <h2>Human time to Epoch Converter</h2>
+    <h2 style="text-align: center;">Human time to Epoch Converter</h2>
+    <div class="input-output">
     <div style="margin-bottom:20px;">
     <label for="year-input">Year: </label>
     <input style="margin-left:20px;" type="text" id="year-input" placeholder="2021" ></input>
@@ -83,10 +84,11 @@
     <input type="button" id="convert-button" value= "Convert">
     <input type="button" id="reset-button" value= "Reset">
   </div>
-  <div style="margin-bottom:20px;">
+  <div >
     <label for="epoch-output">The Epoch value is: </label>
-    <input style="margin-left:5px;" type="text" id="epoch-output" placeholder="The result will appear here."></input>
+    <input style="margin-left:5px;" type="text" id="epoch-output" placeholder="1611041516000" readonly></input>
   </div>
+</div>
   </main>
   <section>
     <div class="content-info" style="text-align: justify;">
