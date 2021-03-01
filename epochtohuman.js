@@ -33,7 +33,7 @@ resetButton.addEventListener('click',()=>{
 
 
 button.addEventListener('click',()=>{
-  let epochDate = new Date(parseInt(input.value));//1611041456000
+  let epochDate = new Date(parseInt(input.value)*1000);//1611041456
   year.value = epochDate.getFullYear();
   month.value = epochDate.getMonth()+1;
   date.value = epochDate.getDate();
