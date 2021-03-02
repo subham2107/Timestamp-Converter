@@ -39,6 +39,6 @@ function addZero(x)
 button.addEventListener('click',()=>{
   humanDate = `${addZero(year.value)}-${addZero(month.value)}-${addZero(date.value)}T${addZero(hour.value)}:${addZero(minute.value)}:${addZero(second.value)}`;
   const myDate = new Date(humanDate);   
-  output.value = myDate.getTime();
+  output.value = (myDate.getTime())/1000;
 });
 
